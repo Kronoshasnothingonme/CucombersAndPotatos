@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Casino & Forge Fit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+    <h1>🎰 Potatos & Cucumbers Casino</h1>
+    <button onclick="show('blackjack')">🎰 Blackjack</button>
+    <button onclick="show('forge')">🏋️ Forge Fit</button>
+  </div>
+
+  <div id="blackjack" class="section" style="display:none;">
+    <h2>🎰 Blackjack</h2>
+    <button onclick="blackjack()">Draw Cards</button>
+    <div id="casinoOut"></div>
+    <button onclick="show('blackjack')">Back</button>
+  </div>
+
+  <div id="forge" class="section" style="display:none;">
+    <h2>🏋️ Forge Fit</h2>
+    <button onclick="forgeFit()">Get Workout Plan</button>
+    <div id="forgeOut"></div>
+    <button onclick="show('forge')">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
