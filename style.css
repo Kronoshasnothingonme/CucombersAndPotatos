@@ -1,64 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-canvas {
-  border: 3px solid white;
-  background: #2a2a2a;
-  display: block;
-  margin: 20px auto;
-}
-
-h1, h2 {
-  text-align: center;
-  margin: 20px 0;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  background:#111;
+  color:white;
+  text-align:center;
+  font-family:Arial;
 }
 
 button {
-  background: #ff6b6b;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px;
-  font-size: 16px;
-}
-
-button:hover {
-  background: #ff5252;
-}
-
-.menu {
-  text-align: center;
+  padding:10px;
+  margin:5px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
 }
 
 .section {
-  background: rgba(0,0,0,0.3);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 500px;
-  margin: 20px auto;
+  display:none;
 }
 
-#casinoOut, #forgeOut {
-  background: rgba(0,0,0,0.5);
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 5px;
-  white-space: pre-wrap;
-  font-family: monospace;
+#money {
+  color:#00ffcc;
+  font-size:20px;
 }
