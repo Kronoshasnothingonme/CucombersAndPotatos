@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Casino & Forge Fit</title>
+  <title>PotatosAndCucumbersForEver</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="menu">
-    <h1>🎰 Potatos & Cucumbers Casino</h1>
-    <button onclick="show('blackjack')">🎰 Blackjack</button>
-    <button onclick="show('forge')">🏋️ Forge Fit</button>
-  </div>
 
-  <div id="blackjack" class="section" style="display:none;">
-    <h2>🎰 Blackjack</h2>
-    <button onclick="blackjack()">Draw Cards</button>
-    <div id="casinoOut"></div>
-    <button onclick="show('blackjack')">Back</button>
-  </div>
+<h1>🥔 PotatosAndCucumbersForEver 🥒</h1>
+<div id="money">$1000</div>
 
-  <div id="forge" class="section" style="display:none;">
-    <h2>🏋️ Forge Fit</h2>
-    <button onclick="forgeFit()">Get Workout Plan</button>
-    <div id="forgeOut"></div>
-    <button onclick="show('forge')">Back</button>
-  </div>
+<nav>
+  <button onclick="show('casino')">Casino</button>
+  <button onclick="show('forge')">Forge Fit</button>
+  <button onclick="show('games')">Games</button>
+</nav>
 
-  <script src="script.js"></script>
+<div id="casino" class="section">
+  <h2>Blackjack</h2>
+  <button onclick="blackjack()">Play</button>
+  <pre id="casinoOut"></pre>
+</div>
+
+<div id="forge" class="section">
+  <h2>Forge Fit</h2>
+  <button onclick="forgeFit()">Generate Plan</button>
+  <pre id="forgeOut"></pre>
+</div>
+
+<div id="games" class="section">
+  <h2>Games</h2>
+
+  <button onclick="location.href='pool.html'">🎱 Pool</button>
+  <button onclick="location.href='airhockey.html'">🏒 Air Hockey</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
